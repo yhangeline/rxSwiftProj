@@ -40,7 +40,7 @@ class RxTableViewController: UIViewController {
          rx.modelSelected： 这是 Rx 基于 UITableView 委托回调方法 didSelectRowAt 的一个封装。
          */
         
-        musicListViewModel.data.bind(to: tableView.rx.items(cellIdentifier: "musicCell")) {
+        musicListViewModel.data.debug("调试1").bind(to: tableView.rx.items(cellIdentifier: "musicCell")) {
             _, music, cell in
             cell.textLabel?.text = music.name
             cell.detailTextLabel?.text = music.singer
@@ -60,6 +60,7 @@ class RxTableViewController: UIViewController {
     
     
 }
+
 
 /***********以下是传统写法*************/
 

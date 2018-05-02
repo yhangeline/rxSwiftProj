@@ -17,6 +17,8 @@
 		F8D5D06120917876007054BB /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D06020917876007054BB /* RxTableViewController.swift */; };
 		F8D5D0652092CDB6007054BB /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D0632092CDB6007054BB /* SubjectsViewController.swift */; };
 		F8D5D0662092CDB6007054BB /* SubjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D0642092CDB6007054BB /* SubjectsViewController.xib */; };
+		F8D5D06E2099AA7D007054BB /* RxUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D06C2099AA7D007054BB /* RxUIViewController.swift */; };
+		F8D5D06F2099AA7D007054BB /* RxUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D06D2099AA7D007054BB /* RxUIViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F8D5D06020917876007054BB /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		F8D5D0632092CDB6007054BB /* SubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
 		F8D5D0642092CDB6007054BB /* SubjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectsViewController.xib; sourceTree = "<group>"; };
+		F8D5D06C2099AA7D007054BB /* RxUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxUIViewController.swift; sourceTree = "<group>"; };
+		F8D5D06D2099AA7D007054BB /* RxUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxUIViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		F8D5D04A209085BA007054BB /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5D0692099AA1D007054BB /* 绑定UI属性 */,
 				F8D5D0622092CD9D007054BB /* subject */,
 				F8D5D05D20917716007054BB /* TbaleDemo */,
 				F8D5D04B209085BA007054BB /* AppDelegate.swift */,
@@ -106,6 +111,15 @@
 				F8D5D0642092CDB6007054BB /* SubjectsViewController.xib */,
 			);
 			path = subject;
+			sourceTree = "<group>";
+		};
+		F8D5D0692099AA1D007054BB /* 绑定UI属性 */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5D06C2099AA7D007054BB /* RxUIViewController.swift */,
+				F8D5D06D2099AA7D007054BB /* RxUIViewController.xib */,
+			);
+			path = "绑定UI属性";
 			sourceTree = "<group>";
 		};
 		FE96C8E909DCB482C3718014 /* Frameworks */ = {
@@ -178,6 +192,7 @@
 			files = (
 				F8D5D056209085BB007054BB /* LaunchScreen.storyboard in Resources */,
 				F8D5D0662092CDB6007054BB /* SubjectsViewController.xib in Resources */,
+				F8D5D06F2099AA7D007054BB /* RxUIViewController.xib in Resources */,
 				F8D5D053209085BB007054BB /* Assets.xcassets in Resources */,
 				F8D5D051209085BA007054BB /* Main.storyboard in Resources */,
 			);
@@ -235,6 +250,7 @@
 				F8D5D0652092CDB6007054BB /* SubjectsViewController.swift in Sources */,
 				F8D5D04E209085BA007054BB /* ViewController.swift in Sources */,
 				F8D5D04C209085BA007054BB /* AppDelegate.swift in Sources */,
+				F8D5D06E2099AA7D007054BB /* RxUIViewController.swift in Sources */,
 				F8D5D06120917876007054BB /* RxTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
