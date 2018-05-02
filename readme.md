@@ -100,7 +100,6 @@
 
 #### 49.[结合Moya使用](http://www.hangge.com/blog/cache/detail_2012.html)
 
-#### 50.[UIPickerView的使用](http://www.hangge.com/blog/cache/detail_1983.html)
 
 ## RxSwift番外
 
