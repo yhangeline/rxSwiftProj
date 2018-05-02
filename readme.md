@@ -101,3 +101,11 @@
 #### 49.[结合Moya使用](http://www.hangge.com/blog/cache/detail_2012.html)
 
 #### 50.[UIPickerView的使用](http://www.hangge.com/blog/cache/detail_1983.html)
+
+## RxSwift番外
+
+#### 1.[为什么 label.rx_text 不是 ObservableType](http://t.swift.gg/d/16-101-label-rx-text-observabletype)
+
+#### 2.[更优雅的处理 TableView Select](http://www.hangge.com/blog/cache/detail_2012.html)
+
+#### 3.[RxSwift 学习指导索引](http://t.swift.gg/d/2-rxswift)
