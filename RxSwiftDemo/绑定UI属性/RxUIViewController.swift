@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+//Rx写法
 extension Reactive where Base : UILabel {
     public var fontSize: Binder<CGFloat> {
         return Binder(self.base) { label, fontSize in
@@ -18,6 +19,14 @@ extension Reactive where Base : UILabel {
     }
 }
 
+//常规写法
+extension UILabel {
+    public var fontSize: Binder<CGFloat> {
+        return Binder(self) { label, fontSize in
+            label.font = UIFont.systemFont(ofSize: fontSize)
+        }
+    }
+}
 
 class RxUIViewController: UIViewController {
 
@@ -31,13 +40,12 @@ class RxUIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         _ = Observable.combineLatest(text1.rx.text, text2.rx.text) { $0! + " " + $1! } // 1
             .map { "Greeting \($0)" } // 2
             .bind(to: text3.rx.text) // 3
         
-        
-        
+
         //Observable序列（每隔0.5秒钟发出一个索引数）
         let observable = Observable<Int>.interval(0.5, scheduler: MainScheduler.instance)
         observable.map { CGFloat($0) }

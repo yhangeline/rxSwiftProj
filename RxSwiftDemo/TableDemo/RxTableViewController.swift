@@ -28,8 +28,6 @@ class RxTableViewController: UIViewController {
     
     func createTable() {
         tableView = UITableView(frame: view.bounds, style: UITableViewStyle.plain)
-//        tableView.delegate = self
-//        tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "musicCell")
         view.addSubview(tableView)
         
@@ -40,23 +38,47 @@ class RxTableViewController: UIViewController {
          rx.modelSelected： 这是 Rx 基于 UITableView 委托回调方法 didSelectRowAt 的一个封装。
          */
         
-        musicListViewModel.data.debug("调试1").bind(to: tableView.rx.items(cellIdentifier: "musicCell")) {
+    
+        
+        
+        musicListViewModel.data.bind(to: tableView.rx.items(cellIdentifier: "musicCell")) {
             _, music, cell in
             cell.textLabel?.text = music.name
             cell.detailTextLabel?.text = music.singer
         }.disposed(by: disposeBag)
 
 
-        //tableView点击响应
+        ////获取选中项的内容
         tableView.rx.modelSelected(Music.self).subscribe(onNext: { music in
             print("你选中的歌曲信息【\(music)】")
         }).disposed(by: disposeBag)
         
+        //获取选中项的索引
         tableView.rx.itemSelected.subscribe(onNext:{index in
             print(index)
         }).disposed(by: disposeBag)
+        
+        //同时获取选中项的索引及内容也是可以的：
+        Observable.zip(tableView.rx.modelSelected(Music.self),tableView.rx.itemSelected).subscribe(onNext: {
+            indext, model in
+            print(indext,model)
+        }).disposed(by: disposeBag)
+        
+        //单元格删除事件响应
+        //获取删除项的索引
+        tableView.rx.itemDeleted.subscribe(onNext: {
+            indexPath in
+            print(indexPath)
+            
+//            self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.bottom)
+        }).disposed(by: disposeBag)
+        
+        //获取删除项的内容
+        tableView.rx.modelDeleted(Music.self).subscribe(onNext: {
+            item in
+            print(item)
+        }).disposed(by: disposeBag)
     }
-    
     
     
 }

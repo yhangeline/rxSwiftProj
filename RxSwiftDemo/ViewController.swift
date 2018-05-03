@@ -16,12 +16,9 @@ class ViewController: UIViewController {
 
     var tableView: UITableView!
 
-
-    
-     let disposeBag = DisposeBag()
-     let data = ["subject及常用方法","绑定UI属性","Rx创建TableView","自定义可绑定属性"]
-     let vcs = ["SubjectsViewController","RxUIViewController","RxTableViewController","RxUIViewController"]
-    
+    let disposeBag = DisposeBag()
+    let data = ["subject及常用方法","绑定UI属性","Rx创建TableView","自定义可绑定属性","Traits","特征序列2：Driver","特征序列3：ControlProperty、 ControlEvent","双向绑定"]
+    let vcs = ["SubjectsViewController","RxUIViewController","RxTableViewController","RxUIViewController","TraitsViewController","DriverViewController","ControlPropertyViewController","TwoWayBindVC"]
     
     override func viewDidLoad() {
         

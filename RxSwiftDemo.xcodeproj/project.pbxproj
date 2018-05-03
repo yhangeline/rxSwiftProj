@@ -19,6 +19,15 @@
 		F8D5D0662092CDB6007054BB /* SubjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D0642092CDB6007054BB /* SubjectsViewController.xib */; };
 		F8D5D06E2099AA7D007054BB /* RxUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D06C2099AA7D007054BB /* RxUIViewController.swift */; };
 		F8D5D06F2099AA7D007054BB /* RxUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D06D2099AA7D007054BB /* RxUIViewController.xib */; };
+		F8D5D0732099AD2F007054BB /* TraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D0712099AD2F007054BB /* TraitsViewController.swift */; };
+		F8D5D0742099AD2F007054BB /* TraitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D0722099AD2F007054BB /* TraitsViewController.xib */; };
+		F8D5D07B2099BD62007054BB /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D0792099BD62007054BB /* DriverViewController.swift */; };
+		F8D5D07C2099BD62007054BB /* DriverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D07A2099BD62007054BB /* DriverViewController.xib */; };
+		F8D5D07F209AB6AE007054BB /* ControlPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D07D209AB6AE007054BB /* ControlPropertyViewController.swift */; };
+		F8D5D080209AB6AE007054BB /* ControlPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D07E209AB6AE007054BB /* ControlPropertyViewController.xib */; };
+		F8D5D083209AF743007054BB /* TwoWayBindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D081209AF743007054BB /* TwoWayBindVC.swift */; };
+		F8D5D084209AF743007054BB /* TwoWayBindVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D082209AF743007054BB /* TwoWayBindVC.xib */; };
+		F8D5D087209B02D8007054BB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D086209B02D8007054BB /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,15 @@
 		F8D5D0642092CDB6007054BB /* SubjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectsViewController.xib; sourceTree = "<group>"; };
 		F8D5D06C2099AA7D007054BB /* RxUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxUIViewController.swift; sourceTree = "<group>"; };
 		F8D5D06D2099AA7D007054BB /* RxUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxUIViewController.xib; sourceTree = "<group>"; };
+		F8D5D0712099AD2F007054BB /* TraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsViewController.swift; sourceTree = "<group>"; };
+		F8D5D0722099AD2F007054BB /* TraitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraitsViewController.xib; sourceTree = "<group>"; };
+		F8D5D0792099BD62007054BB /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		F8D5D07A2099BD62007054BB /* DriverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverViewController.xib; sourceTree = "<group>"; };
+		F8D5D07D209AB6AE007054BB /* ControlPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPropertyViewController.swift; sourceTree = "<group>"; };
+		F8D5D07E209AB6AE007054BB /* ControlPropertyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlPropertyViewController.xib; sourceTree = "<group>"; };
+		F8D5D081209AF743007054BB /* TwoWayBindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWayBindVC.swift; sourceTree = "<group>"; };
+		F8D5D082209AF743007054BB /* TwoWayBindVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoWayBindVC.xib; sourceTree = "<group>"; };
+		F8D5D086209B02D8007054BB /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +100,10 @@
 		F8D5D04A209085BA007054BB /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5D0702099ACFE007054BB /* 特征序列 */,
 				F8D5D0692099AA1D007054BB /* 绑定UI属性 */,
 				F8D5D0622092CD9D007054BB /* subject */,
-				F8D5D05D20917716007054BB /* TbaleDemo */,
+				F8D5D05D20917716007054BB /* TableDemo */,
 				F8D5D04B209085BA007054BB /* AppDelegate.swift */,
 				F8D5D04D209085BA007054BB /* ViewController.swift */,
 				F8D5D04F209085BA007054BB /* Main.storyboard */,
@@ -95,13 +114,13 @@
 			path = RxSwiftDemo;
 			sourceTree = "<group>";
 		};
-		F8D5D05D20917716007054BB /* TbaleDemo */ = {
+		F8D5D05D20917716007054BB /* TableDemo */ = {
 			isa = PBXGroup;
 			children = (
 				F8D5D05E2091772F007054BB /* TableViewDemo.swift */,
 				F8D5D06020917876007054BB /* RxTableViewController.swift */,
 			);
-			path = TbaleDemo;
+			path = TableDemo;
 			sourceTree = "<group>";
 		};
 		F8D5D0622092CD9D007054BB /* subject */ = {
@@ -116,10 +135,34 @@
 		F8D5D0692099AA1D007054BB /* 绑定UI属性 */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5D085209B02B1007054BB /* 自定义双向绑定操作符 */,
 				F8D5D06C2099AA7D007054BB /* RxUIViewController.swift */,
 				F8D5D06D2099AA7D007054BB /* RxUIViewController.xib */,
+				F8D5D081209AF743007054BB /* TwoWayBindVC.swift */,
+				F8D5D082209AF743007054BB /* TwoWayBindVC.xib */,
 			);
 			path = "绑定UI属性";
+			sourceTree = "<group>";
+		};
+		F8D5D0702099ACFE007054BB /* 特征序列 */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5D0712099AD2F007054BB /* TraitsViewController.swift */,
+				F8D5D0722099AD2F007054BB /* TraitsViewController.xib */,
+				F8D5D0792099BD62007054BB /* DriverViewController.swift */,
+				F8D5D07A2099BD62007054BB /* DriverViewController.xib */,
+				F8D5D07D209AB6AE007054BB /* ControlPropertyViewController.swift */,
+				F8D5D07E209AB6AE007054BB /* ControlPropertyViewController.xib */,
+			);
+			path = "特征序列";
+			sourceTree = "<group>";
+		};
+		F8D5D085209B02B1007054BB /* 自定义双向绑定操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5D086209B02D8007054BB /* Operators.swift */,
+			);
+			path = "自定义双向绑定操作符";
 			sourceTree = "<group>";
 		};
 		FE96C8E909DCB482C3718014 /* Frameworks */ = {
@@ -191,8 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D5D056209085BB007054BB /* LaunchScreen.storyboard in Resources */,
+				F8D5D0742099AD2F007054BB /* TraitsViewController.xib in Resources */,
 				F8D5D0662092CDB6007054BB /* SubjectsViewController.xib in Resources */,
+				F8D5D084209AF743007054BB /* TwoWayBindVC.xib in Resources */,
+				F8D5D07C2099BD62007054BB /* DriverViewController.xib in Resources */,
 				F8D5D06F2099AA7D007054BB /* RxUIViewController.xib in Resources */,
+				F8D5D080209AB6AE007054BB /* ControlPropertyViewController.xib in Resources */,
 				F8D5D053209085BB007054BB /* Assets.xcassets in Resources */,
 				F8D5D051209085BA007054BB /* Main.storyboard in Resources */,
 			);
@@ -246,12 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D5D07B2099BD62007054BB /* DriverViewController.swift in Sources */,
 				F8D5D05F2091772F007054BB /* TableViewDemo.swift in Sources */,
+				F8D5D0732099AD2F007054BB /* TraitsViewController.swift in Sources */,
 				F8D5D0652092CDB6007054BB /* SubjectsViewController.swift in Sources */,
+				F8D5D083209AF743007054BB /* TwoWayBindVC.swift in Sources */,
 				F8D5D04E209085BA007054BB /* ViewController.swift in Sources */,
+				F8D5D087209B02D8007054BB /* Operators.swift in Sources */,
 				F8D5D04C209085BA007054BB /* AppDelegate.swift in Sources */,
 				F8D5D06E2099AA7D007054BB /* RxUIViewController.swift in Sources */,
 				F8D5D06120917876007054BB /* RxTableViewController.swift in Sources */,
+				F8D5D07F209AB6AE007054BB /* ControlPropertyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,13 +450,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4ZWNRJ69U;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RxSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YH.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -417,13 +469,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4ZWNRJ69U;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RxSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YH.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

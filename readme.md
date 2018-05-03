@@ -108,3 +108,5 @@
 #### 2.[更优雅的处理 TableView Select](http://www.hangge.com/blog/cache/detail_2012.html)
 
 #### 3.[RxSwift 学习指导索引](http://t.swift.gg/d/2-rxswift)
+
+#### 4.[RxSwift 函数响应式编程](https://academy.realm.io/cn/posts/slug-max-alexander-functional-reactive-rxswift/)
