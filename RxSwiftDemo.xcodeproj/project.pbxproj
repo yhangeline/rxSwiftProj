@@ -28,6 +28,13 @@
 		F8D5D083209AF743007054BB /* TwoWayBindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D081209AF743007054BB /* TwoWayBindVC.swift */; };
 		F8D5D084209AF743007054BB /* TwoWayBindVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D082209AF743007054BB /* TwoWayBindVC.xib */; };
 		F8D5D087209B02D8007054BB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D086209B02D8007054BB /* Operators.swift */; };
+		F8D5D08B209C3455007054BB /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D089209C3455007054BB /* MVVMViewController.swift */; };
+		F8D5D08C209C3455007054BB /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D08A209C3455007054BB /* MVVMViewController.xib */; };
+		F8D5D08E209FF517007054BB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D08D209FF517007054BB /* Service.swift */; };
+		F8D5D090209FF602007054BB /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D08F209FF602007054BB /* Protocol.swift */; };
+		F8D5D09220A03454007054BB /* yh.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D09120A03454007054BB /* yh.plist */; };
+		F8D5D09520A03826007054BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D09320A03826007054BB /* LoginViewController.swift */; };
+		F8D5D09620A03826007054BB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D09420A03826007054BB /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,13 @@
 		F8D5D081209AF743007054BB /* TwoWayBindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWayBindVC.swift; sourceTree = "<group>"; };
 		F8D5D082209AF743007054BB /* TwoWayBindVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoWayBindVC.xib; sourceTree = "<group>"; };
 		F8D5D086209B02D8007054BB /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		F8D5D089209C3455007054BB /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		F8D5D08A209C3455007054BB /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
+		F8D5D08D209FF517007054BB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F8D5D08F209FF602007054BB /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		F8D5D09120A03454007054BB /* yh.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = yh.plist; sourceTree = "<group>"; };
+		F8D5D09320A03826007054BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F8D5D09420A03826007054BB /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,7 @@
 		F8D5D04A209085BA007054BB /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5D088209C343A007054BB /* rx+MVVM */,
 				F8D5D0702099ACFE007054BB /* 特征序列 */,
 				F8D5D0692099AA1D007054BB /* 绑定UI属性 */,
 				F8D5D0622092CD9D007054BB /* subject */,
@@ -163,6 +178,20 @@
 				F8D5D086209B02D8007054BB /* Operators.swift */,
 			);
 			path = "自定义双向绑定操作符";
+			sourceTree = "<group>";
+		};
+		F8D5D088209C343A007054BB /* rx+MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5D089209C3455007054BB /* MVVMViewController.swift */,
+				F8D5D08A209C3455007054BB /* MVVMViewController.xib */,
+				F8D5D09320A03826007054BB /* LoginViewController.swift */,
+				F8D5D09420A03826007054BB /* LoginViewController.xib */,
+				F8D5D08D209FF517007054BB /* Service.swift */,
+				F8D5D08F209FF602007054BB /* Protocol.swift */,
+				F8D5D09120A03454007054BB /* yh.plist */,
+			);
+			path = "rx+MVVM";
 			sourceTree = "<group>";
 		};
 		FE96C8E909DCB482C3718014 /* Frameworks */ = {
@@ -233,12 +262,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D5D08C209C3455007054BB /* MVVMViewController.xib in Resources */,
+				F8D5D09220A03454007054BB /* yh.plist in Resources */,
 				F8D5D056209085BB007054BB /* LaunchScreen.storyboard in Resources */,
 				F8D5D0742099AD2F007054BB /* TraitsViewController.xib in Resources */,
 				F8D5D0662092CDB6007054BB /* SubjectsViewController.xib in Resources */,
 				F8D5D084209AF743007054BB /* TwoWayBindVC.xib in Resources */,
 				F8D5D07C2099BD62007054BB /* DriverViewController.xib in Resources */,
 				F8D5D06F2099AA7D007054BB /* RxUIViewController.xib in Resources */,
+				F8D5D09620A03826007054BB /* LoginViewController.xib in Resources */,
 				F8D5D080209AB6AE007054BB /* ControlPropertyViewController.xib in Resources */,
 				F8D5D053209085BB007054BB /* Assets.xcassets in Resources */,
 				F8D5D051209085BA007054BB /* Main.storyboard in Resources */,
@@ -294,13 +326,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D5D07B2099BD62007054BB /* DriverViewController.swift in Sources */,
+				F8D5D08E209FF517007054BB /* Service.swift in Sources */,
 				F8D5D05F2091772F007054BB /* TableViewDemo.swift in Sources */,
+				F8D5D09520A03826007054BB /* LoginViewController.swift in Sources */,
+				F8D5D090209FF602007054BB /* Protocol.swift in Sources */,
 				F8D5D0732099AD2F007054BB /* TraitsViewController.swift in Sources */,
 				F8D5D0652092CDB6007054BB /* SubjectsViewController.swift in Sources */,
 				F8D5D083209AF743007054BB /* TwoWayBindVC.swift in Sources */,
 				F8D5D04E209085BA007054BB /* ViewController.swift in Sources */,
 				F8D5D087209B02D8007054BB /* Operators.swift in Sources */,
 				F8D5D04C209085BA007054BB /* AppDelegate.swift in Sources */,
+				F8D5D08B209C3455007054BB /* MVVMViewController.swift in Sources */,
 				F8D5D06E2099AA7D007054BB /* RxUIViewController.swift in Sources */,
 				F8D5D06120917876007054BB /* RxTableViewController.swift in Sources */,
 				F8D5D07F209AB6AE007054BB /* ControlPropertyViewController.swift in Sources */,
@@ -453,7 +489,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RxSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YH.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -472,7 +511,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RxSwiftDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YH.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
