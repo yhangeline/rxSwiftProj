@@ -27,6 +27,7 @@ class MVVMViewController: UIViewController {
     
     let viewModel = RegisterViewModel()
     
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -49,7 +50,7 @@ class MVVMViewController: UIViewController {
         
         viewModel.rePasswordUseable.bind(to: rePwdLabel.rx.validationResult).disposed(by: disposeBag)
         
-       registButton.rx.tap.bind(to: viewModel.registerTaps).disposed(by: disposeBag)
+        registButton.rx.tap.bind(to: viewModel.registerTaps).disposed(by: disposeBag)
         
         viewModel.registerButtonEnabled.subscribe(onNext: { [weak self](valid) in
             self?.registButton.isEnabled = valid
