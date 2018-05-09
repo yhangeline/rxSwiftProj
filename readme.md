@@ -112,3 +112,5 @@
 #### 4.[RxSwift 函数响应式编程](https://academy.realm.io/cn/posts/slug-max-alexander-functional-reactive-rxswift/)
 
 #### 5.[RxSwift的使用详解 MVVM架构演示：基本介绍、与MVC比较](http://www.hangge.com/blog/cache/detail_2023.html)
+
+#### 6.[RxSwift -- 那些难以理解的概念](https://www.cnblogs.com/scott-mr/p/7234769.html)

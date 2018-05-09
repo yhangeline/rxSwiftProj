@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
             self?.loginButton.alpha = valid ? 1.0 : 0.5
         }).disposed(by: disposeBag)
         
-        viewModel.loginResult.drive(onNext: { [weak self](result) in
+        viewModel.loginResult.drive(onNext: { [weak self] (result) in
             switch result {
             case let .ok(message):
                 self?.showAlert(message: message)
