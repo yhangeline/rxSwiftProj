@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		70C879B86328B5CCF4115FF4 /* Pods_RxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662CE6226C797DD1E6036EED /* Pods_RxSwiftDemo.framework */; };
+		F8673E7A20A29FF50084E209 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8673E7820A29FF50084E209 /* RefreshViewController.swift */; };
+		F8673E7B20A29FF50084E209 /* RefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8673E7920A29FF50084E209 /* RefreshViewController.xib */; };
+		F8673E8020A2A39D0084E209 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8673E7F20A2A39D0084E209 /* MJRefresh.framework */; };
+		F8673E8420A2C87C0084E209 /* MJExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8673E8320A2C87C0084E209 /* MJExt.swift */; };
 		F8D5D04C209085BA007054BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D04B209085BA007054BB /* AppDelegate.swift */; };
 		F8D5D04E209085BA007054BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D04D209085BA007054BB /* ViewController.swift */; };
 		F8D5D051209085BA007054BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D04F209085BA007054BB /* Main.storyboard */; };
@@ -41,6 +45,11 @@
 		51A9A34E93472BC3878111ED /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4BAEFB9AD94A550A11C131 /* Pods-RxSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		662CE6226C797DD1E6036EED /* Pods_RxSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8673E7820A29FF50084E209 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
+		F8673E7920A29FF50084E209 /* RefreshViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshViewController.xib; sourceTree = "<group>"; };
+		F8673E7E20A2A15E0084E209 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		F8673E7F20A2A39D0084E209 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8673E8320A2C87C0084E209 /* MJExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJExt.swift; sourceTree = "<group>"; };
 		F8D5D048209085BA007054BB /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D5D04B209085BA007054BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D5D04D209085BA007054BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8673E8020A2A39D0084E209 /* MJRefresh.framework in Frameworks */,
 				70C879B86328B5CCF4115FF4 /* Pods_RxSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +101,16 @@
 				5F4BAEFB9AD94A550A11C131 /* Pods-RxSwiftDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8673E7720A29FE50084E209 /* 结合MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F8673E7820A29FF50084E209 /* RefreshViewController.swift */,
+				F8673E7920A29FF50084E209 /* RefreshViewController.xib */,
+				F8673E8320A2C87C0084E209 /* MJExt.swift */,
+			);
+			path = "结合MJRefresh";
 			sourceTree = "<group>";
 		};
 		F8D5D03F209085BA007054BB = {
@@ -114,6 +134,8 @@
 		F8D5D04A209085BA007054BB /* RxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F8673E7E20A2A15E0084E209 /* bridge.h */,
+				F8673E7720A29FE50084E209 /* 结合MJRefresh */,
 				F8D5D088209C343A007054BB /* rx+MVVM */,
 				F8D5D0702099ACFE007054BB /* 特征序列 */,
 				F8D5D0692099AA1D007054BB /* 绑定UI属性 */,
@@ -197,6 +219,7 @@
 		FE96C8E909DCB482C3718014 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8673E7F20A2A39D0084E209 /* MJRefresh.framework */,
 				662CE6226C797DD1E6036EED /* Pods_RxSwiftDemo.framework */,
 			);
 			name = Frameworks;
@@ -268,6 +291,7 @@
 				F8D5D0742099AD2F007054BB /* TraitsViewController.xib in Resources */,
 				F8D5D0662092CDB6007054BB /* SubjectsViewController.xib in Resources */,
 				F8D5D084209AF743007054BB /* TwoWayBindVC.xib in Resources */,
+				F8673E7B20A29FF50084E209 /* RefreshViewController.xib in Resources */,
 				F8D5D07C2099BD62007054BB /* DriverViewController.xib in Resources */,
 				F8D5D06F2099AA7D007054BB /* RxUIViewController.xib in Resources */,
 				F8D5D09620A03826007054BB /* LoginViewController.xib in Resources */,
@@ -305,11 +329,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -329,8 +355,10 @@
 				F8D5D08E209FF517007054BB /* Service.swift in Sources */,
 				F8D5D05F2091772F007054BB /* TableViewDemo.swift in Sources */,
 				F8D5D09520A03826007054BB /* LoginViewController.swift in Sources */,
+				F8673E7A20A29FF50084E209 /* RefreshViewController.swift in Sources */,
 				F8D5D090209FF602007054BB /* Protocol.swift in Sources */,
 				F8D5D0732099AD2F007054BB /* TraitsViewController.swift in Sources */,
+				F8673E8420A2C87C0084E209 /* MJExt.swift in Sources */,
 				F8D5D0652092CDB6007054BB /* SubjectsViewController.swift in Sources */,
 				F8D5D083209AF743007054BB /* TwoWayBindVC.swift in Sources */,
 				F8D5D04E209085BA007054BB /* ViewController.swift in Sources */,
@@ -495,9 +523,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YH.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = RxSwiftDemo/bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -517,9 +546,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YH.RxSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = RxSwiftDemo/bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
